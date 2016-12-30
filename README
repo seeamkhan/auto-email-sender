@@ -1,0 +1,29 @@
+---base.py---
+BasePaage class: all the classes in any file or page where driver is using need to extend from this class. Otherwise selenium driver will be recognised. For this all the classes which are extended from BasePage class should add __init__ def with "super(ClassName, self).__init__(driver)"
+
+---basetestcase.py---
+BaseTestCase class: This class is for setup class which is using in the general.py file. For this we do not need to call setup and teardown repeatedly.
+
+---Conf_Reader.py---
+this is for getting credential value from the login.credentials file.
+
+---elements.py---
+All the page elements have been added here. For specific page specific Classes have been created. In those classes all the necessary page elements i.e xpath, id etc were added. For making some statement shorter some common commands were added in small variables.
+If there any new page is being added in the site then here a new class should be added with all the page elements included in that class.
+
+---testcases.py---
+In this file all the test cases are included. For each page there should be different classes like elements.py and for each functionality there should be different def.
+In each def there should be single functionality to make it simple and clear.
+For best practice, tester should write down all the test cases and then create separate def for those test cases.
+
+---general.py---
+Here all the test cases which need to run need to add under a single class. Using python unittest all the listed test cases will run one by one.
+Test cases should add in seperate def and each def need to name with an initial word 'test' as this is a requirement for python unittest. Please Note:
+Any test cases (def) which does not initiate with a name 'test' will not run.
+We can create objects from the classes in the testcases.py file. We can run all the functionality (all the def) from a class (in the testcases.py file) or specific def by calling classname().defname()
+
+
+--testsuite.py---
+In the testsuite.py file we can add multiple tests from the general.py file and run it as test suite. Additionally, we used HTMLTestRunner to create a user friendly HTML test report.
+
+Please Note: Finally we need to run the testsuite.py file to run the test case and it will create a html file in the same directory with the detail test report.
