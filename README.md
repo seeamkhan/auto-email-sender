@@ -5,4 +5,4 @@ Then, insert email subject, body, recipient address etc form xml file.
 Send the email.
 Logout from the sender email account.
 Login to the recipient email account.
-Check and verify the data entered is correct.
+Check and verify the data entered are correct.
