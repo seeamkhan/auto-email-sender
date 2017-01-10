@@ -20,7 +20,7 @@ each def in the general.py file.
         cls.driver.maximize_window()
 
         # Navigate to SMDS Login page
-        login_url = 'https://smds.dev.win.dotnet.panth.com/accounts/login'
+        login_url = 'https://gmail.com/'
         cls.driver.get(login_url)
 
     @classmethod

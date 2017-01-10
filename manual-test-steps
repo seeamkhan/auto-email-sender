@@ -1,0 +1,13 @@
+open browser and maximize
+open 'gmail.com'
+verify email field appeared
+get email address from xml file
+enter email address into email field
+click next button
+verify email found and accepted
+verify password field appeared
+get password from xml file
+enter password into the password field
+click sign in button
+verify browser title contains email address
+verify compose button appeared
